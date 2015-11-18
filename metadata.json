@@ -1,0 +1,15 @@
+{
+  "name": "puppet-activiti-rails-admin",
+  "version": "0.0.1",
+  "author": "Dimonyga",
+  "summary": "Install and manage Activiti rails admin with Unicorn and Nginx",
+  "license": "GPL",
+  "source": "https://github.com/Dimonyga/puppet-activiti-rails-admin",
+  "project_page": "https://github.com/Dimonyga/puppet-activiti-rails-admin",
+  "issues_url": "https://github.com/Dimonyga/puppet-activiti-rails-adminissues",
+  "dependencies": [
+    {"name":"Dimonyga/puppet-unicorn"},
+    {"name":"puppetlabs/vcsrepo"},
+    {"name":"jfryman/nginx"}
+  ]
+}

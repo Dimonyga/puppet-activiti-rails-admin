@@ -8,8 +8,8 @@
   "project_page": "https://github.com/Dimonyga/puppet-activiti-rails-admin",
   "issues_url": "https://github.com/Dimonyga/puppet-activiti-rails-adminissues",
   "dependencies": [
-    {"name":"Dimonyga/puppet-unicorn"},
     {"name":"puppetlabs/vcsrepo"},
-    {"name":"jfryman/nginx"}
+    {"name":"jfryman/nginx"},
+    {"name":"puppetlabs/ruby"}
   ]
 }

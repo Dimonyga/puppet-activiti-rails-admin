@@ -8,6 +8,6 @@ summary 'Install and manage Unicorn, a fast rack HTTP server'
 source 'https://github.com/puppetlabs-operations/puppet-unicorn'
 project_page 'https://github.com/puppetlabs-operations/puppet-unicorn'
 
-dependency 'Dimonyga/puppet-unicorn',
 dependency 'puppetlabs/vcsrepo',
-dependency 'jfryman/nginx'
+dependency 'jfryman/nginx',
+dependency 'puppetlabs/ruby'

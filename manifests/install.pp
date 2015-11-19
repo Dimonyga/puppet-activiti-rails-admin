@@ -26,7 +26,7 @@ class activiti_rails_admin::install inherits activiti_rails_admin {
         ensure => present,
         shell => "/usr/sbin/nologin",
         home => $activiti_admin_home,
-        managehome => true,
+        managehome => false,
   }
 
   group { $activiti_admin_group:

@@ -1,3 +1,5 @@
 ---
-- :name: Activiti
-  :api_url: <%= @activiti_admin_server_url %>
+<% @servers.each_pair do |server, value| -%>
+- :name: <%= server %>
+  :api_url: <%= value['url'] %>
+<% end -%>

@@ -1,6 +1,6 @@
 class activiti_rails_admin(
     $activiti_admin_home = $activiti_rails_admin::params::activiti_admin_home,
-    $activiti_admin_giturl = $activiti_rails_admin::params::activiti_admin_giturl,
+    $activiti_admin_giturl = $activiti_rails_admin::params::activiti_admin_git_url,
     $activiti_admin_user = $activiti_rails_admin::params::activiti_admin_user,
     $activiti_admin_group = $activiti_rails_admin::params::activiti_admin_group,
     $activiti_admin_server_url = $activiti_rails_admin::params::activiti_admin_server_url,

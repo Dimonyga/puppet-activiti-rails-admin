@@ -8,6 +8,7 @@ class activiti_rails_admin::install inherits activiti_rails_admin {
       $zlib_dev_package = "libghc-zlib-dev"
       $patch_package = "patch"
       $make_package = "make"
+      $gcc_package = "gcc"
     }
     default:  {
       $git_package = "git"
@@ -16,6 +17,7 @@ class activiti_rails_admin::install inherits activiti_rails_admin {
       $zlib_dev_package = "zlib-devel"
       $patch_package = "patch"
       $make_package = "make"
+      $gcc_package = "gcc"
       }
   }
 
@@ -66,6 +68,9 @@ class activiti_rails_admin::install inherits activiti_rails_admin {
   package { $patch_package:
 	  ensure => present,
   }
+  package { $gcc_package:
+    ensure => present,
+  }
 
   exec { "bundle install --without development test":
     path	=> "/bin:/usr/bin:/usr/local/bin",
@@ -75,7 +80,8 @@ class activiti_rails_admin::install inherits activiti_rails_admin {
 		  Package[$nodejs_package],
 		  Package[$curl_dev_package],
 		  Package[$zlib_dev_package],
-		  Package[$patch_package]
+		  Package[$patch_package],
+      Package[$gcc_package]
 	  ],
   }
     
